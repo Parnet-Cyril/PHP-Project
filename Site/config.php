@@ -2,10 +2,10 @@
 
     try
     {
-        $bdd = new PDO("mysql:host=CHANGER_HOST_ICI;dbname=CHANGER_DB_NAME;charset=utf8", "CHANGER_LOGIN", "CHANGER_PASS");
+        $bdd = new PDO("mysql-projetphp.alwaysdata.net ;dbname=projetphp_projet;charset=utf8", "projetphp", "OussamaPHP");
     }
-    catch(PDOException $e)
+    catch(PDOException $erreurBD)
     {
-        die('Erreur : '.$e->getMessage());
+        die('Erreur de connexion à la base de donnée : '.$erreurBD->getMessage());
     }
 
