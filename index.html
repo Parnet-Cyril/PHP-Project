@@ -3,32 +3,31 @@
 
     <head>
         <title>E-Event.IO</title>
-
+        <meta charset="utf8">
         <link rel="stylesheet" href="style.css" id="mycss"/>
     </head>
     
     <body>
         <div>
             <div>
-                <h1 class="titre1">  E-Event.IO  </h1>           
-                <p class="par1">Bienvenue</p>
+                <h1 class="titre1">  E-Event.IO  </h1>
             </div>
-
             <div class="page">
                 <div class="formulaire">
+                    <img class="logo" src="logo_event.png"></img>
+                    <p class="par1">Bienvenue</p>
                     <form action="data-processing.php" method="post" autocomplete="on">
                         <div>
-                            <input type="text" id="id" name="user_id" placeholder="identifiant">
+                            <input type="text" id="id" name="user_id" placeholder="Identifiant">
                         </div>
                         <div>
-                            <input type="password" id="mdp" name="user_mdp" placeholder="mot de passe">
-                        </div>
-                    </br>
+                            <input type="password" id="mdp" name="user_mdp" placeholder="Mot de passe">
+                        </div>  
+                        <ul class="clickable"><li><a href="#" class="mdp">Mot de passe oublié ?</a></li></ul>
                         <div class="button">
-                            <input class="cnx" type="button" onclick="window.location.href = 'accueil.html';" value="Connexion"/>
-                            <input class="new" type="button" onclick="window.location.href = 'NouveauCompte.html';" value="Créer un compte"/>
+                            <button class="cnx" name="action" type="submit">Connexion</button>
+                            <button class="new" name="action" type="submit">Créer un compte</button>
                         </div>
-                        <a href="#" class="mdp">mot de passe oublié</a>
                     </form>
                 </div>
             </div>
