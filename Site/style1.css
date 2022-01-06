@@ -1,0 +1,296 @@
+body {
+  background: linear-gradient(45deg, #fc4668, #3f5efb);
+  height: 100vh;
+  overflow: hidden;
+
+  /* met tout au centre */
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  /* min-height: 70vh; */
+}
+
+/*
+  * Important
+  pour ajouter du texte dans le HTML :
+  * <p>lorem5</p>
+*/
+/*
+  TODO: case à gauche 
+  ? Pays (<select></select>)
+  * + voire le modéle fait sur paint (case à droite + à gauche)
+  TODO: case à droite --> vérification de mdp
+  ! lien pour la conformité de mot de passe
+  * https://www.w3schools.com/howto/howto_js_password_validation.asp
+  TODO: case en bas --> 
+  * les boutpns de soumission à espacer
+  ? conditions générales (<input type="checkbox"/>)
+  ! lien pour les checkbox
+  * https://www.creativejuiz.fr/blog/tutoriels/personnaliser-aspect-boutons-radio-checkbox-css
+  TODO: input -->
+  * augmenter la largeur et la taille de la police
+*/
+
+.titre1 {
+  /* E-Event.IO */
+  text-align: center;
+  /* color: #b48914; */
+
+  /* background: linear-gradient(120deg,#4af3ff 0%,#cc5eba 65%); */
+  background: linear-gradient(60deg, #4af3ff 30%, #2ecf6c 65%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 350%;
+  font-weight: bold;
+  font-family: cursive, Verdana, Tahoma, sans-serif;
+
+  opacity: 0.9;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.par1 {
+  /* Nouveau Compte */
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 150%;
+  font-weight: bold;
+  font-family: arial, sans-serif;
+}
+
+.par2 {
+  /* nom / prenom / email ... */
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 100%;
+  font-weight: bold;
+  font-family: arial, sans-serif;
+}
+
+.cadre {
+  /* background-color: RGBa(255, 255, 255, 0.4);
+  border-radius: 25px; */
+  background-color: transparent;
+
+  padding: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 1%;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cadre1 {
+  /* background-color: RGBa(255, 255, 255, 0.4);
+  border-radius: 25px; */
+  background-color: transparent;
+
+  padding: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 0%;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.infoPerso {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 150%;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+
+  width: 320px;
+
+  background-color: RGBa(255, 255, 255, 0.3);
+
+  padding: 2%; /* entre le formulaire et son encadré */
+  margin: auto;
+  margin-right: 1%;
+
+  border-radius: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+}
+
+.formulaire {
+  /* encadré numéro 1 */
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 150%;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+
+  width: 320px;
+
+  background-color: RGBa(255, 255, 255, 0.3);
+
+  padding: 2%; /* entre le formulaire et son encadré */
+  margin: auto;
+  margin-left: 1%;
+  /* margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 3%; */
+
+  /* border-style: groove;
+  border-color: #c0c7f8;
+  border-radius: 15px;
+  box-shadow: 3px 4px 2px rgb(61, 61, 50); */
+  border-radius: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+}
+
+.soumission {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 150%;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+
+  width: 650px;
+
+  background-color: RGBa(255, 255, 255, 0.3);
+
+  padding: 15px;
+  margin: auto;
+
+  /* display: flex; */
+  justify-content: space-evenly;
+
+  border-radius: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+}
+
+#entree {
+  /* style */
+  border-radius: 50px;
+  color: black; /* couleur du texte écrit par l'utilisateur */
+  background-color: rgba(255, 255, 255, 0.3); /* couleur de fond de l'input */
+
+  /* contour */
+  outline: rgba(47, 47, 47, 0.3);
+  outline-width: 2px;
+  outline-style: groove;
+
+  /* emplecement du texte */
+  padding-top: 12px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+
+  /* position du bouton */
+  /* margin-top: 1%; */
+  margin: auto;
+}
+
+#entree::placeholder {
+  color: #000; /* couleur du texte */
+  font-weight: bold;
+  font-size: 130%;
+  font-family: Georgia, sans-serif;
+}
+
+/* .conditions{
+  margin-top: 0%;
+  margin-bottom: 1%;
+} */
+
+.continuer {
+  /* bouton */
+  background-color: transparent;
+  border: ridge #198319;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 10px;
+
+  /* texte */
+  color: rgb(3, 0, 0);
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none;
+  font-family: Georgia, sans-serif;
+
+  /* emplacement */
+  /* margin-bottom: 20px;
+  margin-left: 1%; */
+  text-align: center;
+  display: inline-block;
+}
+
+.continuer:hover {
+  /* bouton */
+  border-radius: 20px;
+
+  /* couleur du texte */
+  color: #16571b;
+
+  /* couleur du bouton + lumière */
+  border: solid transparent;
+  background: #38ff49;
+  box-shadow: 0 0 10px #38ff49, 0 0 40px #38ff49, 0 0 80px #38ff49;
+
+  transition-delay: 0.2s;
+}
+
+.retour {
+  /* bouton */
+  background-color: transparent;
+  border: ridge #cf1717;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 10px;
+
+  /* texte */
+  color: rgb(3, 0, 0);
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none;
+  font-family: Georgia, sans-serif;
+
+  /* emplacement */
+  text-align: center;
+  display: inline-block;
+}
+
+.retour:hover {
+  /* bouton */
+  border-radius: 20px;
+
+  /* couleur du texte */
+  color: #ffffff;
+
+  /* couleur du bouton + lumière */
+  border: solid transparent;
+  background: #ff0000;
+  box-shadow: 0 0 10px #ff0000, 0 0 40px #ff0000, 0 0 80px #ff0000;
+
+  transition-delay: 0.2s;
+}
+
+/*
+toutes les pages
+*/
+
+/*
+.remonter{
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+  opacity: 0.15;
+}
+
+.remonter:hover{
+  opacity: 0.5;
+}
+*/
+
+* {
+  scroll-behavior: smooth;
+}

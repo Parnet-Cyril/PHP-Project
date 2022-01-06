@@ -1,0 +1,279 @@
+body{
+  /* background-color: rgb(4, 85, 105); */
+  background: linear-gradient(45deg, #FF00FF,#BE3DE4, #8274CC, #1CD3A3);
+  height: 100vh;
+  /* background-image: url(images/gris.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; */
+  /* margin: 0px;
+  padding: 0px; */
+
+  /* met tout au centre */
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  /* min-height: 70vh; */
+}
+
+.titre1{  
+  text-align: center;
+  color: #b48914;
+  background: linear-gradient(120deg,#4af3ff 0%,#cc5eba 65%);
+  background: linear-gradient(60deg,#4af3ff 30%,#1CD3A3 65%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 350%;
+  font-weight: bold;
+  text-decoration: underline;
+  font-family: cursive, Verdana, Tahoma, sans-serif;
+  opacity: 0.9;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.page{
+  /* background-color: RGBa(255, 255, 255, 0.4);
+  border-radius: 25px; */
+  background-color: transparent;
+  padding: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  margin-top: 0%;
+}
+
+.formulaire{ /* encadré numéro 1 */
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 150%;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  width: 320px;
+
+  background-color: RGBa(255, 255, 255, 0.30);
+  
+  padding: 2%; /* entre le formulaire et son encadré */
+  margin: auto;
+  /* margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 3%; */
+  
+  /* border-style: groove;
+  border-color: #c0c7f8;
+  border-radius: 15px;
+  box-shadow: 3px 4px 2px rgb(61, 61, 50); */
+  border-radius: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+}
+
+.logo{
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.par1{ /* "Bienvenue" */
+  color: #ffffff;
+  text-align: center;
+  font-size: 150%;
+  font-weight: bold;
+  /* font-style: italic; */
+  font-family: arial, sans-serif;
+}
+
+#id{
+  /* style */
+  color: black; /* couleur du texte écrit par l'utilisateur */
+  background-color: rgba(255, 255, 255, 0.3); /* couleur de fond de l'input */
+  font-family: Arial, Helvetica, sans-serif;
+  width: 200px;
+
+  /* contour */
+  border-radius: 50px;
+  border-color: #110F17;
+  border-width: thick;
+  outline-style: groove;
+  outline-color: transparent;
+
+  /* emplecement du texte */
+  padding-top: 12px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+
+  /* position du bouton */
+  margin-top: 1%;
+  margin-bottom: 20px;
+
+}
+
+#id::placeholder{
+  color: #000; /* couleur du texte */
+  font-weight: bold;
+  font-size: 130%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#id:focus {
+  background-color: #1CD3A3;
+}
+
+#mdp{
+  /* style */
+  color: black; /* couleur du texte écrit par l'utilisateur */
+  background-color: rgba(255, 255, 255, 0.3); /* couleur de fond de l'input */
+  font-family: Arial, Helvetica, sans-serif;
+  width: 200px;
+
+  /* contour */
+  border-radius: 50px;
+  border-color: #110F17;
+  border-width: thick;
+  outline-style: groove;
+  outline-color: transparent;
+  
+  /* emplecement du texte */
+  padding-top: 12px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+
+  /* position du bouton */
+  margin-top: 1%;
+  margin-bottom: 20px;
+}
+
+#mdp::placeholder{
+  color: #000; /* couleur du texte */
+  font-weight: bold;
+  font-size: 130%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#mdp:focus {
+  background-color: #1CD3A3;
+}
+
+ul {
+  list-style: none;
+  margin: auto;
+  padding-left: 0px;
+}
+.clickable li a:after {/*Animation de soulignement*/
+  content: '';
+  display: block;
+  margin: auto;
+  height: 1px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+li a:hover:after {
+  width: 48%;
+  background: #110F17;
+}
+.mdp{ /* "mot de passe oublié" */
+  color: #110F17;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  flex-direction: column;
+  list-style: none;
+}
+
+.cnx{
+  /* bouton */
+  background-color: transparent;
+  border: ridge #110F17;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 40px;
+
+  /* texte */
+  color: rgb(3, 0, 0);
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+
+  /* emplacement */
+  text-align: center;
+  display: inline-block;
+}
+
+.cnx:hover{
+  /* bouton */
+  border-radius: 20px;
+
+  /* couleur du texte */
+  color: #ffffff;
+
+  /* couleur du bouton + lumière */
+  border: solid transparent;
+  background: #110F17;
+  box-shadow: 0 0 0px #1a1724, 0 0 10px #1a1724, 0 0 20px #1a1724;
+
+  transition-delay: 0s;
+}
+
+.new{
+  /* bouton */
+  background-color: transparent;
+  border: ridge #110F17;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 10px;
+  
+  /* texte */
+  color: rgb(3, 0, 0);
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+
+  /* emplacement */
+  margin-bottom: 20px;
+  margin-left: 1%;
+  text-align: center;
+  display: inline-block;
+}
+
+.new:hover{
+  /* bouton */
+  border-radius: 20px;
+
+  /* couleur du texte */
+  color: #ffffff;
+
+  /* couleur du bouton + lumière */
+  border: solid transparent;
+  background: #110F17;
+  box-shadow: 0 0 0px #1a1724, 0 0 10px #1a1724, 0 0 20px #1a1724;
+
+  transition-delay: 0s;
+}
+
+/*
+.remonter{
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+  opacity: 0.15;
+}
+
+.remonter:hover{
+  opacity: 0.5;
+}
+*/
+
+* {
+  scroll-behavior: smooth;
+}
